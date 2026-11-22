@@ -523,7 +523,7 @@ function buildOffice(scene: THREE.Scene) {
   g.add(floor);
   const slab = new THREE.Mesh(
     new THREE.BoxGeometry(41.5, 0.18, 25.5),
-    new THREE.MeshStandardMaterial({ color: "#dfe6ec", roughness: 0.9 }),
+    new THREE.MeshStandardMaterial({ color: "#bcc2c9", roughness: 0.9 }),
   );
   slab.position.y = -0.1;
   g.add(slab);
@@ -857,8 +857,8 @@ const Office3D = forwardRef<OfficeHandle, Props>(function Office3D(props, ref) {
     const { onStatus, onLog, onSelect } = props;
 
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color("#e8edf1");
-    scene.fog = new THREE.Fog("#e8edf1", 85, 170);
+    scene.background = new THREE.Color("#c6cbd1");
+    scene.fog = new THREE.Fog("#c6cbd1", 85, 170);
 
     const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 300);
     camera.position.set(25, 23, 25);
